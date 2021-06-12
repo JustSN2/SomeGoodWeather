@@ -1,0 +1,97 @@
+body {
+    background-image: url('/icons/meteo.png');
+    backdrop-filter: blur(5px);
+    font-family: Helvetica;
+    user-select: none;
+}
+
+.current_weather {
+    width: 230px;
+    height: 280px;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+}
+
+#current_time {
+    margin: 0;
+    text-align: center;
+    font-style: italic;
+    font-size: 36px;
+    padding-top: 15px;
+}
+
+.weather {
+    position: relative;
+    height: 150px;
+}
+
+#weather_icon {
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#current_temperature {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    font-size: 26px;
+}
+
+.humidity {
+    margin-top: 25px;
+    margin-left: 10px;
+    float: left;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.wind {
+    margin-top: 25px;
+    margin-right: 10px;
+    float: right;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#percent_humid {
+    margin: 0;
+    font-size: 18px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.wind_descr {
+    margin-right: 5px;
+}
+
+#direction, #speed {
+    font-size: 16px;
+    text-align: center;
+}
+
+.restart_butt {
+    margin-top: 5px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    font-size: 26px;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+.restart_butt:hover {
+    opacity: 0.8;
+}
